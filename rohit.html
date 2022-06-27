@@ -1,99 +1,57 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>registration page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      background-color: mediumvioletred;
+    }
+    form{
+      width: 50%;
+      background-color:whitesmoke;
+      margin: 0 auto;
+      height: 430px;
+      border-radius: 10px;
 
-
-<style>
-  body {
-    background-color: crimson;
-    margin-left: 350px;
-    margin-top: 50px;
-  }
-
-  form {
-    background-color: white;
-    border-radius: 10px;
-    padding-top: 15px;
-    padding-left: 120px;
-    border: 1px whitesmoke;
-    color: black;
-    width: 600px;
-    height: 500px;
-  }
-</style>
+    }
+    button{
+        margin: 10px;
+      
+    }
+  </style>
 </head>
-
 <body>
-
   <form>
-
-    <h3>RegistrationForm</h3><br>
-    <div class="row">
-      <div class="col col-5">
-        <div class="form-group">
-          <label for="first name">First name</label>
-          <input type="text" class="form-control" id="first name">
-        </div>
+    <h2>Registration form</h2>
+      <div class="form-group">
+        <label for="first name">first name:</label>
+        <input type="first name" class="form-control" id="f n" placeholder="first name" name="first name">
       </div>
-      <div class="col col-5">
-        <div class="form-group">
-          <label for="lastname">Lastname</label>
-          <input type="text" class="form-control" id="lastname">
-        </div>
+      <div class="form-group">
+        <label for="last name">last name:</label>
+        <input type="last name" class="form-control" id="l n" placeholder=" last name" name="last name">
       </div>
-    </div><br>
-    <div class="row">
-      <div class="col col-5">
-        <div class="form-group">
-          <label for="email">BirthDay</label>
-          <input type="datetime-local" name="birthday" class="form-control" placeholder="enter your date of birth">
-
-        </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="e" placeholder=" email" name="email">
       </div>
-      <div class="col col-5">
-        <div class="form-group">
-          <label for="email">Gender</label><br>
-          Male:
-          <input type="radio" name="gender">
-          Female:
-          <input type="radio" name="gender">
-        </div>
+       <div class="form-group">
+        <label for="phone no">phone no:</label>
+        <input type="email" class="form-control" id="e" placeholder=" phone number" name="phone no">
       </div>
-    </div><br>
-    <div class="row">
-      <div class="col col-5">
-        <div class="form-group">
-          <label for="email">email</label>
-          <input type="text" class="form-control" id="first name">
-        </div>
+       <div class="dropdown">
+        subject
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">choose options
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+        </ul>
       </div>
-      <div class="col col-5">
-        <div class="form-group">
-          <label for="Phonenumber">Phonenumber</label>
-          <input type="text" class="form-control" id="lastname">
-        </div>
-      </div>
-    </div><br>
-    <div class="form-group col-md-10 ">
-      <select name="subject" id="subject" class="form-select">
-        <option value="1">choose</option>
-        <option value="2">subject 1</option>
-        <option value="3">subject 2</option>
-        <option value="4">subject 3</option>
-        <option value="5">subject 4</option>
-      </select>
-    </div>
-    <div class="col-lg-6"><br>
-      <button type="button" class="btn btn-primary">Submit</button>
-    </div>
-  </form>//
-
-
+     </div>
+     <button type="button" class="btn btn-primary">submit</button> 
+</form>
+</div>
 </body>
-
 </html>
-
