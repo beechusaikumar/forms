@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration form</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    body{
-      background-color: mediumvioletred;
-    }
-    form{
-      width: 50%;
-      background-color:whitesmoke;
-      margin: 0 auto;
-      height: 430px;
-      border-radius: 10px;
-
-    }
-    button{
-        margin: 10px;
-      
-    }
-  </style>
 </head>
 <body>
-  <form>
-    <h2>Registration form</h2>
-      <div class="form-group">
-        <label for="first name">first name:</label>
-        <input type="first name" class="form-control" id="f n" placeholder="first name" name="first name">
-      </div>
-      <div class="form-group">
-        <label for="last name">last name:</label>
-        <input type="last name" class="form-control" id="l n" placeholder=" last name" name="last name">
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="e" placeholder=" email" name="email">
-      </div>
-       <div class="form-group">
-        <label for="phone no">phone no:</label>
-        <input type="email" class="form-control" id="e" placeholder=" phone number" name="phone no">
-      </div>
-       <div class="dropdown">
-        subject
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">choose options
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-        </ul>
-      </div>
-     </div>
-     <button type="button" class="btn btn-primary">submit</button> 
-</form>
-</div>
+  <!-- <h6>Registration form</h6>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <div id="ui">
+          <form class="form-group">
+            <div class="row">
+              <div class="col-lg-6">
+                <label>first name</label>
+                <input type="text"name="fname" class="form control" place holder="Enter your first name">
+                </div>
+                 <div class="col-lg-6">
+                  <label>last name</label>
+                  <input type="text"name="fname" class="form control" place holder="Enter your last name">
+                  </div>
+                  <div class="col-lg-6">
+                    <label>e-mail</label>
+                    <input type="text"name="fname" class="form control" place holder="Enteryour e-mail">
+                    </div>
+                    <div class="col-lg-6">
+                  <label>phone number</label>
+                  <input type="email" name="email"class="formcontrol" place holder="phone number">
+                </div>
+        
+                  <select>
+                    <option>choose subject</option>
+                    <option>html</option>
+                    <option>css</option>
+                    <option>js</option>
+                  </select>
+                  <input type="submit"name="submit"value="submit"class="btn btn-primary btn-sm">
+                  </form>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                  </div>
+                </div> -->
+
+                <form>
+                  <div class="row">
+                    <div class="form-group col col-4">
+                      <label>phone number</label>
+                      <input type="email" name="email" class="form-control" place holder="phone number">
+                    </div>
+                    <div class="col col-4">
+                      <label>phone number</label>
+                      <input type="email" name="email"class="form-control" place holder="phone number">
+                    
+                    </div>
+                  </div>
+                </form>
+
+
 </body>
 </html>
